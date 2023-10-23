@@ -1,0 +1,21 @@
+{
+  "name": "electron",
+  "productName": "Toms App",
+  "version": "1.0.0",
+  "description": "first desktop app with electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "package": "electron-builder build"
+  },
+  "author": "Tom Jaeger",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^27.0.1",
+    "electron-builder": "^24.6.4"
+  },
+  "build": {
+    "appId": "com.OrgName.TomsApp",
+    "files": "!build-assets{/*}"
+  }
+}

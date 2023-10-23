@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>Tom Jaeger's Desktop App</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <h1>You are running Electron version: <br />
+        <span id="version"></span>
+    </h1>
+    <h2><input type="text" /></h2>
+    <button id="new-window">Open New Window</button>
+    <h4>Number of windows: <span id="count"></span></h4>
+
+    <script>
+        require('./renderer.js')
+    </script>
+
+</body>
+
+
+</html>
